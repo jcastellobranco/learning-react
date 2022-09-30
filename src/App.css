@@ -27,6 +27,19 @@
 .App-link {
   color: #61dafb;
 }
+.Movies{
+  display: flex;
+  flex-direction:column ; 
+  justify-content: space-between;
+}
+.Movie{
+  text-align: left;
+  border: solid 1px gray;
+  max-width: 400px;
+  padding-left: 20px;
+  background-color: bisque;
+  margin: 2% auto ;
+}
 
 @keyframes App-logo-spin {
   from {

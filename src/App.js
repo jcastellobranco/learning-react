@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar";
 import Contador from './components/Contador';
-import Movies from './components/Movies';
+import Advertising from './components/Advertising';
+import Counter from './components/Counter';
+import MoviesList from './components/MoviesList';
+
 
 
 function App() {
@@ -23,8 +26,19 @@ function App() {
           Learn React
         </a>
       </header>
+      <Advertising title="Primeira Propaganda">
+        <h4>Texto Principal da Propaganda</h4>
+      </Advertising>
+      <Counter initialNumber={0}/>
       <Contador />
-      <Movies  />
+      <MoviesList />
+      <Advertising title="Segunda Propaganda">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </Advertising>
     </div>
   );
 }

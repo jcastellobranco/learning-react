@@ -20,11 +20,11 @@ class MoviesList extends Component {
     return (
       <div 
       id='list'
-      onClick={this.emitAlert}
-      onMouseOver={this.changeToYellow}
+      onClick={this.emitAlert} 
+      onMouseOver={this.changeToYellow} 
       onMouseOut={this.changeToBrown}
       >
-        <Movie title="Matrix" score="7" genres={["Ficção", "Ação"]} />
+        <Movie title="Matrix" score={7} genres={["Ficção", "Ação"]} />
         <Movie title="Senhor dos Aneis" score={4} genres={["Ficção", "Aventura"]} />
         <Movie title="Indiana" score={8} genres={["Ação"]} />
       </div>

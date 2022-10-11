@@ -17,12 +17,18 @@ class Counter extends Component {
         this.setState({number:this.state.number -1 })
     }
 
+    componentDidMount(){
+        console.log('componente foi montado');
+    }
+    componentDidUpdate(){
+        console.log('componente foi atualizado');
+    }
     render() {
         return (
             <div>
                 <h5>Sou o número: {this.state.number}</h5>
-                <button onClick={()=>this.incrementNumber}>Acrescentar</button>
-                <button onClick={()=>this.decrementNumber}>Diminuir</button>
+                <button onClick={()=>this.incrementNumber()}>Acrescentar</button>
+                <button onClick={()=>this.decrementNumber()}>Diminuir</button>
             </div>
         )
     }
